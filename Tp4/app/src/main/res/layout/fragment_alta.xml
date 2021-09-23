@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentAlta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ID"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etIdFragmentAlta"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NombreProducto"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etNombreProductoFragmentAlta"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Stock"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etStockFragmentAlta"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Categoria"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinnerAlta"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/Agregar"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey"
+            android:id="@+id/btnAgregar"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

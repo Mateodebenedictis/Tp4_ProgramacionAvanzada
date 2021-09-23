@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tp4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ID">ID</string>
+    <string name="NombreProducto">NOMBRE PRODUCTO</string>
+    <string name="Stock">STOCK</string>
+    <string name="Categoria">CATEGORIA</string>
+    <string name="Agregar">AGREGAR</string>
+    <string name="Buscar">BUSCAR</string>
+    <string name="Modificar">MODIFICAR</string>
+</resources>

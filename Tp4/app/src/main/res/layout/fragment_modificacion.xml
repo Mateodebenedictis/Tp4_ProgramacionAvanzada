@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentModificacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/darkGrey"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ID"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:padding="2dp"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/etIdFragmentModificacion"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="@string/Buscar"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/grey"
+                android:id="@+id/btnBuscar"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NombreProducto"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etNombreProductoFragmentModificacion"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Stock"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etStockFragmentModificacion"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Categoria"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinnerModificacion"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/Modificar"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey"
+            android:id="@+id/btnModificar"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
