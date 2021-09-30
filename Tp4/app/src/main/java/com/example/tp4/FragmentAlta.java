@@ -1,5 +1,6 @@
 package com.example.tp4;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +31,7 @@ public class FragmentAlta extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private EditText etProducto,etStock;
 
     public FragmentAlta() {
         // Required empty public constructor
@@ -57,8 +66,10 @@ public class FragmentAlta extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_alta, container, false);
 
-
+        etProducto=view.findViewById(R.id.etNombreProductoFragmentAlta);
+        etStock=view.findViewById(R.id.etStockFragmentAlta);
 
         return view;
     }
+
 }

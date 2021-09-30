@@ -1,6 +1,6 @@
 package com.example.tp4.Objetos;
 
-class Categoria {
+public class Categoria {
 
     private String Nombre;
     private int Id;

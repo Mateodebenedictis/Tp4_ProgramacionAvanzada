@@ -1,6 +1,6 @@
 package com.example.tp4.Objetos;
 
-class Producto {
+public class Producto {
 
     private String Nombre;
     private int Stock;
