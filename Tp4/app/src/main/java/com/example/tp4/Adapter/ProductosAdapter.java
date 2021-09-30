@@ -30,11 +30,18 @@ public class ProductosAdapter extends ArrayAdapter<Producto> {
         TextView tvProducto = (TextView) item.findViewById(R.id.producto);
         TextView tvStock = (TextView) item.findViewById(R.id.stock);
         TextView tvCategoria = (TextView) item.findViewById(R.id.categoria);
+        String Categoria="";
+        //switch para guardar la categoria
+        switch (getItem(position).getCategoria()){
+            case 1: Categoria="Informatica";break;
+            case 2: Categoria="Electrodomesticos";break;
+            case 3: Categoria="Audio";break;
+        }
 
         tvId.setText(getItem(position).getId()+"");
-        tvProducto.setText(getItem(position).getNombre()+"");
-    //    tvStock.setText(getItem(position).getStock());
-     //   tvCategoria.setText(getItem(position).getCategoria());
+        tvProducto.setText("Producto: "+getItem(position).getNombre()+"");
+        tvStock.setText("Stock : "+getItem(position).getStock()+"");
+        tvCategoria.setText("Categoria: "+Categoria+"");
 
         return item;
     }

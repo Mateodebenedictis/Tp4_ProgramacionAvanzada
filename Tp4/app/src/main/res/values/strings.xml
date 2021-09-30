@@ -9,4 +9,5 @@
     <string name="Agregar">AGREGAR</string>
     <string name="Buscar">BUSCAR</string>
     <string name="Modificar">MODIFICAR</string>
+    <string name="btnVerProductos">Ver Productos</string>
 </resources>

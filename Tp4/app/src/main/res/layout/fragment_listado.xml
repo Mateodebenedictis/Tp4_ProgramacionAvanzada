@@ -6,12 +6,7 @@
     tools:context=".FragmentListado">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Fragment Listado"
-        android:textColor="@color/black"/>
+
     <Button
         android:id="@+id/btnConectar"
         android:layout_width="wrap_content"
@@ -19,8 +14,7 @@
         android:layout_marginStart="136dp"
         android:layout_marginLeft="136dp"
         android:layout_marginTop="40dp"
-        android:text="Conectar"
-      />
+        android:text="@string/btnVerProductos" />
 
     <ListView
         android:id="@+id/lvArticulos"
